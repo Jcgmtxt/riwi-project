@@ -3,6 +3,8 @@ package Estructure.domain.entities;
 import jakarta.persistence.*;
 import lombok.Data;
 
+import java.util.List;
+
 @Entity
 @Data
 
@@ -16,6 +18,6 @@ public class ProjectEntity {
     private String description;
     @ManyToMany
     @JoinColumn(name = "task_id", nullable = false)
-    private TaskEntity taskEntity;
+    private List<TaskEntity> taskEntity;
 
 }

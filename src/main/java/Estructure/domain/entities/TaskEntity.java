@@ -14,7 +14,7 @@ public class TaskEntity {
     @Column(nullable = false)
     private String description;
     @ManyToOne
-    @JoinColumn(name = "grout_id", nullable = false)
+    @JoinColumn(name = "group_id", nullable = false)
     private GroupEntity groupEntity;
     @Column(nullable = false)
     @Enumerated(EnumType.STRING)

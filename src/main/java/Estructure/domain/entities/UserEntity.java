@@ -3,6 +3,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import javax.management.relation.Role;
+import java.util.List;
 
 @Entity
 @Data
@@ -19,6 +20,8 @@ public class UserEntity {
     @Column(nullable = false)
     @Enumerated(EnumType.STRING)
     private Role role;
+    @OneToMany(mappedBy = "userEntity")
+    private List<GroupEntity> groups;
 
 }
 

@@ -1,5 +1,6 @@
 package Estructure.domain.entities;
 
+import Estructure.domain.entities.Enums.Status;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -16,9 +17,9 @@ public class TaskEntity {
     @ManyToOne
     @JoinColumn(name = "group_id", nullable = false)
     private GroupEntity groupEntity;
-    @Column(nullable = false)
+
     @Enumerated(EnumType.STRING)
-    private Enum status;
+    private Status status;
 
 
 }

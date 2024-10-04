@@ -16,8 +16,14 @@ public class ProjectEntity {
     private String title;
     @Column(nullable = false)
     private String description;
+    @OneToMany(mappedBy = "projectEntity")
+    private List<GroupEntity> groups;
     @ManyToMany
-    @JoinColumn(name = "task_id", nullable = false)
-    private List<TaskEntity> taskEntity;
+    @JoinTable(
+            name = "project_tasks",
+            joinColumns = @JoinColumn(name = "project_id"),
+            inverseJoinColumns = @JoinColumn(name = "task_id")
+    )
+    private List<TaskEntity> tasks;
 
 }

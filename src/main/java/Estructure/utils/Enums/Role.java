@@ -1,4 +1,4 @@
-package Estructure.domain.entities.Enums;
+package Estructure.utils.Enums;
 
 public enum Role {
     ADMIN,

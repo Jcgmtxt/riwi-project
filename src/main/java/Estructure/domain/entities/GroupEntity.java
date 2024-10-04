@@ -18,4 +18,5 @@ public class GroupEntity {
     private UserEntity userEntity;
 
     private String groupName;
+
 }

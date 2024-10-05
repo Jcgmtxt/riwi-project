@@ -1,6 +1,7 @@
 package Estructure.domain.entities;
 
-import Estructure.domain.entities.Enums.Status;
+
+import Estructure.utils.Enums.Status;
 import jakarta.persistence.*;
 import lombok.Data;
 

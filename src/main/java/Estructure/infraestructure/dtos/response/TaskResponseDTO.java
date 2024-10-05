@@ -1,10 +1,12 @@
-package Estructure.domain.dtos.request;
+package Estructure.infraestructure.dtos.response;
 
-import Estructure.domain.entities.Enums.Status;
+
+import Estructure.utils.Enums.Status;
 import lombok.Data;
 
 @Data
-public class TaskRequestDTO {
+public class TaskResponseDTO {
+    private Long id;
     private String title;
     private String description;
     private Long groupId;

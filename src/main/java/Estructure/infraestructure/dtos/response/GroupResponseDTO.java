@@ -1,9 +1,10 @@
-package Estructure.domain.dtos.request;
+package Estructure.infraestructure.dtos.response;
 
 import lombok.Data;
 
 @Data
-public class GroupRequestDTO {
+public class GroupResponseDTO {
+    private Long id;
     private Long projectId;
     private Long userId;
     private String groupName;

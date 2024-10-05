@@ -1,4 +1,4 @@
-package Estructure.domain.dtos.request;
+package Estructure.infraestructure.dtos.request;
 
 import lombok.Data;
 

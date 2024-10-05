@@ -1,4 +1,4 @@
-package Estructure.application;
+package Estructure.infraestructure;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

@@ -1,10 +1,14 @@
-package Estructure.domain.dtos.response;
+package Estructure.infraestructure.dtos.response;
 
-import lombok.Data;
+import lombok.*;
 
 import javax.management.relation.Role;
 
-@Data
+@Setter
+@Getter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
 public class UserResponseDTO {
     private Long id;
     private String name;
